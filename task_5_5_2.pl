@@ -1,2 +1,4 @@
-% Test 3 fails
-my_tail([_ | Tali], Tail).
+my_list([]).
+my_list([_ | Tail]) :- my_list(Tail).
+
+my_tail([_ | Tail], Tail) :- my_list(Tail).
